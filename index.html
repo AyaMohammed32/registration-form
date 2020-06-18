@@ -1,0 +1,509 @@
+﻿<!doctype html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration Form</title>
+    <!-- CSS Style files-->
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/min.css" rel="stylesheet" />
+    <!--fontawesome script-->
+    <script defer src="js/all.js"></script>
+</head>
+
+<body>
+
+    <!--registration-form-section start-->
+    <section class="registration-form-section">
+        <div class="container registration-form-section-container">
+            <div class="row min-height-570">
+
+                <!--tab menu section start-->
+                <div class="col-md-1 tab-menu-section">
+                    <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="personalinformation-section-tab" data-toggle="pill" href="#personalinformation-section-content" role="tab" aria-controls="personalinformation-section-content" aria-selected="true" 
+                        data-toggle="tooltip" data-placement="top" title="بيانات العميل"
+                        >
+                            <span><i class="fas fa-user"></i></span>
+                        </a>
+                        <a class="nav-link" id="company-information-section-tab" data-toggle="pill" href="#company-information-section-content" role="tab" aria-controls="company-information-section-content" aria-selected="false"
+                        data-toggle="tooltip" data-placement="top" title="الموقع الجغرافى"
+                        >
+                        <i class="fas fa-map-marker-alt"></i>
+                           
+                        </a>
+                        <a class="nav-link" id="accompanying-persons-section-content-tab" data-toggle="pill" href="#accompanying-persons-section-content" role="tab" aria-controls="accompanying-persons-section-content" aria-selected="false"
+                        data-toggle="tooltip" data-placement="top" title="الفروع"
+                        >
+                         <i class="fas fa-university"></i>
+                            
+                        </a>
+                        <a class="nav-link" id="participation-fees-section-content-tab" data-toggle="pill" href="#participation-fees-section-content" role="tab" aria-controls="participation-fees-section-content" aria-selected="false"
+                        data-toggle="tooltip" data-placement="top" title="البائعين"
+                        >
+                        <i class="fas fa-user-friends"></i>
+                            
+                        </a>
+                        <a class="nav-link" id="beneficiary-persons-section-content-tab" data-toggle="pill" href="#beneficiary-persons-section-content" role="tab" aria-controls="beneficiary-persons-section-content" aria-selected="false" 
+                       data-toggle="tooltip" data-placement="top" title="الضرائب" 
+                        >
+                          <i class="fas fa-money-check-alt"></i>
+                        </a>
+                       
+                        
+                    </div>
+                </div>
+                <!--/tab menu section end-->
+                <!--tab content section start-->
+                <div class="col-md-11  tab-content-section">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <!-- form first page section start-->
+                        <div class="tab-pane fade show active" id="personalinformation-section-content" role="tabpanel" aria-labelledby="personalinformation-section-tab">
+                            <div class="row">
+                                <div class="col-md-12 form-section-title">
+                                    <h1 class="font-20">بيانات العميل :</h1>
+                                </div>
+                            </div>
+                            <div class="row tab-content-body">
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-person-code">كود العميل <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-person-code" placeholder="أضف كود العميل" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-name">اسم العميل <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-name" placeholder="أضف اسم العميل" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-address"> عنوان العميل <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-address" placeholder="أضف عنوان العميل" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-phone-number"> رقم التليفون <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-phone-number" placeholder="أضف رقم التليفون" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="first-mobile-number"> رقم الجوال الأول <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="first-mobile-number" placeholder="أضف رقم الجوال الأول " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="second-mobile-number"> رقم الجوال الثانى</label>
+                                        <input type="text" class="form-control" id="second-mobile-number" placeholder="أضف رقم الجوال الثانى">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="employee-name">المسئول المختص</label>
+                                        <input type="text" class="form-control" id="employee-name" placeholder="أضف اسم المسئول">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="person-passport-valid-date">وظيفة المختص </label>
+                                       <select id="doctor-search" class="form-control padding-0 ">
+                                <option selected="">اختارالتخصص</option>
+                                <option>محاسب</option>
+                                <option>HR</option>
+                                <option>اسم الوظيفة</option>
+                                <option>اسم الوظيفة</option>
+                                
+                            </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 ">
+                                    <div class="form-group">
+                                        <label for="notes"> ملاحظات <span class="color-red font-bold">*   </span></label>
+                             <textarea name="notes" cols="" rows="7" placeholder="أضف ملاحظات" class="form-control border-d5d5d5 padding-right-0 "></textarea>
+                                    </div>
+                                </div>
+                             
+                                <div class="col-md-12 padding-top-15-px ">
+                                    <label style="width: 100%">
+                                        <span class="hintStyled" style="width: 100%">
+                                        <span style="font-size: 22px;color:#ad3131;display: block;">ملاحظات :</span>
+                                        <span>
+                                    يرجى قراءة جميع حقول الإدخال وإعادة ملئها   
+                                        </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row tab-content-body padding-top-15-px text-right">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-danger form-button" data-toggle="tooltip" data-placement="top" title="Clear Data">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /form first page section end-->
+                        <!-- form second page section start-->
+                        <div class="tab-pane fade" id="company-information-section-content" role="tabpanel" aria-labelledby="company-information-section-tab">
+                            <div class="row">
+                                <div class="col-md-12 form-section-title">
+                                    <h1 class="font-20">الموقع الجغرافي :</h1>
+                                </div>
+                            </div>
+                            <div class="row tab-content-body">
+
+                               
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="form-country-name">الدولة <span class="color-red font-bold">*   </span></label>
+                                        <select id="form-country-name" class="form-control">
+                                            <option selected>اختر اسم الدولة</option>
+                                            <option>مصر</option>
+                                            <option>السعودية</option>
+                                            <option>قطر</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="form-country-main">الإقليم الرئيسي <span class="color-red font-bold">*   </span></label>
+                                        <select id="form-country-main" class="form-control">
+                                            <option selected>اختر اسم الإقليم الرئيسي </option>
+                                            <option>مصر</option>
+                                            <option>السعودية</option>
+                                            <option>قطر</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                  <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="form-country-two">اسم الإقليم الفرعي <span class="color-red font-bold">*   </span></label>
+                                        <select id="form-country-two" class="form-control">
+                                            <option selected>اختر اسم الإقليم الفرعي</option>
+                                            <option>مصر</option>
+                                            <option>السعودية</option>
+                                            <option>قطر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="form-city-name">المحافظة <span class="color-red font-bold">*   </span></label>
+                                        <select id="form-city-name" class="form-control">
+                                            <option selected>اختر اسم المحافظة </option>
+                                            <option>القاهرة  </option>
+                                            <option>الإسكندرية</option>
+                                            <option>سيناء</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="form-area-name">المنطقة <span class="color-red font-bold">*   </span></label>
+                                        <select id="form-area-name" class="form-control">
+                                            <option selected>اختر اسم المنطقة </option>
+                                            <option>منطقة 1</option>
+                                            <option>منطقة 2</option>
+                                            <option>منطقة 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="low-earea-name">الحى <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="low-earea-name" placeholder="أضف اسم الحى">
+                                    </div>
+                                </div>
+                                 <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="user-personality">طبيعة العميل  <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="user-personality" placeholder="أضف طبيعة العميل">
+                                    </div>
+                                </div>
+
+                              <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="user-time">فترة العميل  <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="user-time" placeholder="أضف فترة العميل">
+                                    </div>
+                                </div>
+                              
+                            </div>
+                            <div class="row tab-content-body padding-top-15-px text-right">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-danger form-button" data-toggle="tooltip" data-placement="top" title="Clear Data">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /form second page section end-->
+                        <!-- form third page section start-->
+                        <div class="tab-pane fade" id="accompanying-persons-section-content" role="tabpanel" aria-labelledby="accompanying-persons-section-content-tab">
+                            <div class="row">
+                                <div class="col-md-12 form-section-title">
+                                    <h1 class="font-20">الفروع :</h1>
+                                </div>
+                            </div>
+                            
+                           <div class="row tab-content-body">
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-person-code"> كود الفرع <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-person-code" placeholder="أضف كود الفرع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-name">اسم الفرع <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-name" placeholder="أضف اسم الفرع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-address"> عنوان الفرع <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-address" placeholder="أضف عنوان الفرع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="form-phone-number"> رقم التليفون <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-phone-number" placeholder="أضف رقم التليفون" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="first-mobile-number"> رقم الجوال الأول <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="first-mobile-number" placeholder="أضف رقم الجوال الأول " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="second-mobile-number"> رقم الجوال الثانى</label>
+                                        <input type="text" class="form-control" id="second-mobile-number" placeholder="أضف رقم الجوال الثانى">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="email-form"> البريد الإلكترونى</label>
+                                        <input type="text" class="form-control" id="email-form" placeholder="أضف البريد الإلكترونى">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="employee-name">المسئول المختص</label>
+                                        <input type="text" class="form-control" id="employee-name" placeholder="أضف اسم المسئول">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="form-group">
+                                        <label for="person-passport-valid-date">وظيفة المختص </label>
+                                       <select id="doctor-search" class="form-control padding-0 ">
+                                <option selected="">اختارالتخصص</option>
+                                <option>محاسب</option>
+                                <option>HR</option>
+                                <option>اسم الوظيفة</option>
+                                <option>اسم الوظيفة</option>
+                                
+                            </select>
+                                    </div>
+                                </div>
+    <div class="col-md-12 form-group">
+                                    <label for="">هل لديك حساب مستقل؟ </label>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <input class="inp-cbx" id="yes-answer" type="checkbox" style="display: none;">
+                                    <label class="cbx" for="yes-answer">
+                                        <span>
+                                            <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span style="padding-right: 10px">نعم</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <input class="inp-cbx" id="no-answer" type="checkbox" style="display: none;">
+                                    <label class="cbx" for="no-answer">
+                                        <span>
+                                            <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span style="padding-right: 10px">لا</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-10 ">
+                                    <div class="form-group">
+                                        <label for="notes"> ملاحظات <span class="color-red font-bold">*   </span></label>
+                             <textarea name="notes" cols="" rows="7" placeholder="أضف ملاحظات" class="form-control border-d5d5d5 padding-right-0 "></textarea>
+                                    </div>
+                                </div>
+                             
+                                
+                            </div>
+                            <div class="row tab-content-body padding-top-25-px text-right">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-danger form-button" data-toggle="tooltip" data-placement="top" title="Clear Data">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /form third page section end-->
+                        <!-- form fourth page section start-->
+                        <div class="tab-pane fade" id="participation-fees-section-content" role="tabpanel" aria-labelledby="participation-fees-section-content-tab">
+                            <div class="row">
+                                <div class="col-md-12 form-section-title">
+                                    <h1 class="font-20">البائعين</h1>
+                                </div>
+                            </div>
+                          <div class="row tab-content-body">
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="form-person-code">كودالبائع  <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-person-code" placeholder="أضف كود البائع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="form-name">اسم البائع <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-name" placeholder="أضف اسم البائع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="form-address"> عنوان البائع <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-address" placeholder="أضف عنون البائع" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="form-phone-number"> تاريخ البداية <span class="color-red font-bold">*   </span></label>
+                                        <input type="date" class="form-control" id="form-phone-number"  required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="first-mobile-number"> تاريخ النهاية <span class="color-red font-bold">*   </span></label>
+                                        <input type="date" class="form-control" id="first-mobile-number"  required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="bounce-value"> نسبة البونص</label>
+                                        <input type="text" class="form-control" id="bounce-value" placeholder="أضف نسبة البونص">
+                                    </div>
+                                </div>
+          
+                            </div>
+                            <div class="row tab-content-body padding-top-25-px text-right">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-danger form-button" data-toggle="tooltip" data-placement="top" title="Clear Data">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /form fourth page section end-->
+                        <!-- form fiveth page section start-->
+                        <div class="tab-pane fade" id="beneficiary-persons-section-content" role="tabpanel" aria-labelledby="beneficiary-persons-section-content-tab">
+                            <div class="row">
+                                <div class="col-md-12 form-section-title">
+                                    <h1 class="font-20">الضرائب</h1>
+                                </div>
+                            </div>
+                            <div class="row tab-content-body">
+                                <div class="col-md-8 ">
+                                    <div class="form-group">
+                                        <label for="form-vees-code">كود الضريبة <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-vees-code" placeholder="أضف كود الضريبة" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 ">
+                                    <div class="form-group">
+                                        <label for="form-vees-name">اسم الضريبة<span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="form-vees-name" placeholder="أضف اسم الضريبة" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <label for="">هل لديك إرتباط بحسابات أخري ؟</label>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <input class="inp-cbx" id="account-yes-answer" type="checkbox" style="display: none;">
+                                    <label class="cbx" for="account-yes-answer">
+                                        <span>
+                                            <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span style="padding-right: 10px">نعم</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <input class="inp-cbx" id="account-no-answer" type="checkbox" style="display: none;">
+                                    <label class="cbx" for="account-no-answer">
+                                        <span>
+                                            <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </svg>
+                                        </span>
+                                        <span style="padding-right: 10px">لا</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="col-md-8  margin-top-10">
+                                    <div class="form-group">
+                                        <label for="account-code"> كود الحساب<span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="account-code" placeholder="أضف كود الحساب " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 margin-top-10">
+                                    <div class="form-group">
+                                        <label for="account-name">اسم الحساب <span class="color-red font-bold">*   </span></label>
+                                        <input type="text" class="form-control" id="account-name" placeholder="أضف اسم الحساب" required>   
+                                    </div>
+                                </div>
+                    
+                               
+                            </div>
+
+                            <div class="row tab-content-body padding-top-25-px text-right">
+                                <div class="col-md-12">
+                                 <button type="submit" class="btn btn-info form-button" data-toggle="tooltip" data-placement="top" title="submit" style="margin-right:10px;">قدم</button>
+                                    <button type="button" class="btn btn-danger form-button" data-toggle="tooltip" data-placement="top" title="Clear Data">
+                                        حذف 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /form fiveth page section end-->
+                   
+
+                    </div>
+                </div>
+                <!--/tab content section end-->
+            </div>
+        </div>
+
+    </section>
+    <!--/registration-form-section end-->
+    <!-- Js script start-->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/min.js"></script>
+    <!-- /Js script end-->
+</body>
+
+</html> 

@@ -1,0 +1,404 @@
+body {
+direction: rtl;
+text-align: right;
+padding-top:50px;
+padding-bottom: 50px;
+    background-image: url(../img/pexels-photo-109919.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-form-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registration-form-section .registration-form-section-container {
+    background-color:rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-section-title {
+    padding-top: 15px;
+}
+
+.registration-form-section .registration-form-section-container .tab-menu-section {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border-left: 1px solid rgba(171, 168, 168, 0.49);
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section {
+    border-left: 1px solid rgba(171, 168, 168, 0.49);
+}
+
+.registration-form-section .registration-form-section-container .tab-menu-section a {
+    color: #18887d;
+    font-size: 32px;
+    border-bottom: 1px solid rgba(171, 168, 168, 0.49);
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 0px !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #18887d !important;
+    color: #fff !important;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0rem;
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section {
+    display:flex;
+    align-items:center;
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section .tab-content{
+    width:90%;
+    margin:auto
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section .form-section-title h1 {
+    color: #18887d;
+    padding: 10px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section label {
+    color: #515151;
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section .form-control {
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0rem;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.63);
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section .tab-content-body .form-button {
+    color: #fff;
+    margin-bottom: 25px;
+       float: left;
+    width: 140px;
+    border-radius: 0;
+}
+
+.registration-form-section .registration-form-section-container .tab-content-section .tab-content-body .booking-button {
+    color: #fff;
+    background-color: #514f4f !important;
+    border-color: #514f4f !important;
+    margin-bottom: 25px;
+}
+
+.pagniation-div {
+    position: absolute;
+    bottom: 0px;
+}
+textarea{
+border:1px solid rgba(161, 161, 161, 0.63) !important; 	
+resize: none;
+}
+.gray-thin-boder{
+	border:1px solid rgba(161, 161, 161, 0.63);
+}
+
+/*checkbox start*/
+.cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+
+    .cbx span:first-child {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        transform: scale(1);
+        vertical-align: middle;
+        border: 1px solid #9cb3b7;
+        transition: all 0.2s ease;
+    }
+
+        .cbx span:first-child svg {
+            position: absolute;
+            top: 3px;
+            left: 2px;
+            fill: none;
+            stroke: #FFFFFF;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 16px;
+            stroke-dashoffset: 16px;
+            transition: all 0.3s ease;
+            transition-delay: 0.1s;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .cbx span:first-child:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #9cb3b7;
+            display: block;
+            transform: scale(0);
+            opacity: 1;
+            border-radius: 50%;
+        }
+
+    .cbx span:last-child {
+        padding-left: 8px;
+    }
+
+.cbx:hover span:first-child {
+    border-color: #9cb3b7;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+    background: #18887d;
+    border-color: #18887d;
+    animation: wave 0.4s ease;
+}
+
+    .inp-cbx:checked + .cbx span:first-child svg {
+        stroke-dashoffset: 0;
+    }
+
+    .inp-cbx:checked + .cbx span:first-child:before {
+        transform: scale(3.5);
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+/*/
+checkbox end*/
+/*bootstrap reset*/
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show > .btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(189, 189, 189, 0.86) !important;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(189, 189, 189, 0.86) !important;
+}
+/*placeholder color*/
+::placeholder {
+    color: rgba(109, 109, 109, 0.72) !important;
+    display: none !important;
+    text-transform:lowercase
+}
+
+:-ms-input-placeholder {
+    color: rgba(109, 109, 109, 0.72) !important;
+    text-transform: lowercase
+}
+
+::-ms-input-placeholder {
+    color: rgba(109, 109, 109, 0.72) !important;
+    text-transform: lowercase
+}
+/*util code start*/
+.min-height-570 {
+    min-height: 570px !important;
+}
+
+.white-background-color {
+    background-color: #ffffff;
+}
+
+.font-bold {
+    font-weight: bold !important;
+}
+
+.width-50-percent {
+    width: 50% !important;
+}
+
+.padding-15-px {
+    padding: 15px !important;
+}
+
+.margin-top-neg-3px {
+    margin-top: -3px !important;
+}
+
+.padding-top-5-px {
+    padding-top: 5px !important;
+}
+
+.padding-top-10-px {
+    padding-top: 10px !important;
+}
+
+.padding-top-15-px {
+    padding-top: 15px !important;
+}
+
+.padding-bottom-10-px {
+    padding-bottom: 10px !important;
+}
+
+.padding-top-25-px {
+    padding-top: 25px !important;
+}
+
+.padding-bottom-25-px {
+    padding-bottom: 25px !important;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-right-and-left-0-px {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.margin-right-4-px {
+    margin-right: 4px !important;
+}
+
+.margin-right-5-px {
+    margin-right: 5px !important;
+}
+
+.margin-right-10-px {
+    margin-right: 10px !important;
+}
+
+.margin-right-25-px {
+    margin-right: 25px !important;
+}
+
+.margin-left-25-px {
+    margin-left: 25px !important;
+}
+
+.padding-left-15-px {
+    padding-left: 15px !important;
+}
+
+.padding-left-0-px {
+    padding-left: 0px !important
+}
+
+.padding-right-0-px {
+    padding-right: 0px !important
+}
+
+.font-color-gray {
+    color: #565454;
+}
+
+.font-color-light-gray {
+    color: #969698;
+}
+
+.min-height240 {
+    min-height: 240px !important;
+}
+
+.min-height170 {
+    min-height: 170px !important;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.dark-gray-bg label {
+    color: white !important;
+}
+/*font size*/
+.font-20 {
+    font-size: 20px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.color-red {
+    color: #ad3131;
+}
+/*/
+util code end*/
+/*media query start*/
+@media only screen and (max-width: 992px) {
+    .registration-form-section {
+        height: auto;
+    }
+
+        .registration-form-section .registration-form-section-container .tab-menu-section .nav {
+            display: block !important;
+            border-bottom: 1px solid rgba(171, 168, 168, 0.49);
+        }
+
+            .registration-form-section .registration-form-section-container .tab-menu-section .nav a {
+                display: inline-block !important;
+                height: auto !important;
+                line-height: normal !important;
+                width: 18% !important;
+                border-bottom: none !important;
+                border-bottom: none !important;
+                padding: 10px 5px !important;
+                padding: 10px 5px !important;
+              border-left: 1px solid rgba(171, 168, 168, 0.49);
+            }
+}
+/*/
+media query end*/
+
+
+span.hintStyled {
+    padding: 10px;
+    padding-right: 15px;
+    background-color: #f3f3f3;
+    display: inline-block;
+    border-right: 3px solid #b4b4b4;
+}
